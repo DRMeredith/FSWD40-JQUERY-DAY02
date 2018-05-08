@@ -46,71 +46,132 @@
 
 	<script>$(document).ready(function(){
 		var beef = {
-			name = "Beefeater"
-			value = 20
-			count = 1
-		}
+			name : "Beefeater",
+			value : 20,
+			count : 1
+		};
 
 
 		var bombay = {
-			name = "Bombay Sapphire"
-			value = 25
-			count = 1
-		}
+			name : "Bombay Sapphire",
+			value : 25,
+			count : 1
+		};
 
 
 		var bulldog = {
-			name = "Bulldog"
-			value = 30
-			count = 1
-		}
+			name : "Bulldog",
+			value : 30,
+			count : 1
+		};
 
 
-		var Edinburgh = {
-			name = "Edinburgh"
-			value = 30
-			count = 1
-		}
+		var edinburgh = {
+			name : "Edinburgh",
+			value : 30,
+			count : 1
+		};
 
 
 		var mare = {
-			name = "Gin Mare"
-			value = 35
-			count = 1
-		}
+			name : "Gin Mare",
+			value : 35,
+			count : 1
+		};
 
 
 		var monkey = {
-			name = "Monkey Gin"
-			value = 40
-			count = 1
-		}
+			name : "Monkey Gin",
+			value : 40,
+			count : 1
+		};
 
 
 		var omg = {
-			name = "OMG"
-			value = 45
-			count = 1
-		}
+			name : "OMG",
+			value : 45,
+			count : 1
+		};
 
 
 		var wien = {
-			name = "Wien Gin"
-			value = 50
-			count = 1
-		}
+			name : "Wien Gin",
+			value : 50,
+			count : 1
+		};
 
 
 		var reisetbauer = {
-			name = "Reisetbauer Gin"
-			value = 55
-			count = 1
-		}
+			name : "Reisetbauer Gin",
+			value : 55,
+			count : 1
+		};
 
-		$("item1").click(function(){
-			$(this).addToCart
-		}
+		var ginTotal = 0;
 
+
+		$("#item1").click(function(){
+			$("#sci1").text(beef.name);
+			ginTotal = ginTotal + beef.value;
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item2").click(function(){
+			$("#sci2").text(bombay.name);
+			ginTotal = ginTotal + bombay.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item3").click(function(){
+			$("#sci3").text(bulldog.name);
+			ginTotal = ginTotal + bulldog.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item4").click(function(){
+			$("#sci4").text(edinburgh.name);
+			ginTotal = ginTotal + edinburgh.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item5").click(function(){
+			$("#sci5").text(mare.name);
+			ginTotal = ginTotal + mare.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item6").click(function(){
+			$("#sci6").text(monkey.name);
+			ginTotal = ginTotal + monkey.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		}); 
+
+		$("#item7").click(function(){
+			$("#sci7").text(omg.name);
+			ginTotal = ginTotal + omg.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item8").click(function(){
+			$("#sci8").text(wien.name);
+			ginTotal = ginTotal + wien.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
+
+		$("#item9").click(function(){
+			$("#sci9").text(reisetbauer.name);
+			ginTotal = ginTotal + reisetbauer.value
+			document.getElementById("totalPrint").innerHTML = ginTotal;
+			console.log("Working")
+		});
 
 	});
 
