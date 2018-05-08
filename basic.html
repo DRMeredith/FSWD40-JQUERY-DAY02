@@ -5,12 +5,27 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<title>Day 2: Basic Exercise</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<img src="img/" alt="">
+<img id="thebell" src="img/bell.png" alt="bell">
+<p id="thebellp"></p>
+<img id="thesanta" src="img/santa.png" alt="santa">
+<p id="thesantap"></p>
+<img id="thegift" src="img/gift.png" alt="gift">
+<p id="thegiftp"></p>
 	<script>$(document).ready(function(){
+
+		$("#thebell").click(function(){
+			document.getElementById("thebellp").innerHTML = "You clicked the Bell";
+		});
+		$("#thesanta").click(function(){
+			document.getElementById("thesantap").innerHTML = "You clicked the Santa";
+		});
+		$("#thegift").click(function(){		
+			document.getElementById("thegiftp").innerHTML = "You clicked the Gift";
+		});
 	});
 	</script>
 
