@@ -7,7 +7,7 @@
  display: flex;
  flex-direction: column;
  justify-content: space-between;
- background-color: lightgrey;
+ background-color: white;
 }
 
 #cardpile{
@@ -28,8 +28,13 @@
  border-radius: 3vw;
  width: 90%;
  margin: 4% auto;
- background-color: orange;
+ background-color: lightgrey;
  height: 40%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-left: 3%;
+ padding-right: 3%;
 }
 
 h1{
@@ -43,7 +48,7 @@ h1{
  height: 70%;
  width: 7%;
  background-color: grey;
- border-radius: 5%;
+ border-radius: 9%;
  color: white;
  margin-top: 3%;
  
@@ -59,3 +64,96 @@ h1{
  color: transparent;
  background-color: transparent;
 }
+
+.todrop{
+ height: 70%;
+ width: 7%;
+ background-color: white;
+ color: grey;
+ border-radius: 9%;
+ margin-top: 3%;
+ border: grey dotted;
+ font-size: 80%;
+ text-align: center;
+}
+
+.todrop div{
+ margin: 70% auto;
+}
+
+.onRightPlace{
+ background-color: lightgrey;
+}
+
+.copied{
+ width: 100%;
+ height: 100%;
+ margin: 0;
+ padding: 0;
+ color: white;
+ font-size: 80%;
+}
+
+
+#copy1{
+ background-color: hsl(36,100%,50%);
+}
+
+#copy2{
+ background-color: hsl(72,100%,50%);
+}
+
+#copy3{
+ background-color: hsl(98,100%,50%);
+}
+
+#copy4{
+ background-color: hsl(144,100%,50%);
+}
+
+#copy5{
+ background-color: hsl(180,100%,50%);
+}
+
+#copy6{
+ background-color: hsl(196,100%,50%);
+}
+
+#copy7{
+ background-color: hsl(232,100%,50%);
+}
+
+#copy8{
+ background-color: hsl(268,100%,50%);
+}
+
+#copy9{
+ background-color: hsl(304,100%,50%);
+}
+
+#copy10{
+ background-color: hsl(340,100%,50%);
+}
+
+.droppingDone{
+ height: 70%;
+ width: 7%;
+ padding: 0;
+ color: white;
+ border-radius: 9%;
+ margin-top: 3%;
+ border: grey solid;
+ font-size: 6vh;
+ text-align: center;
+}
+
+.copied span{
+ position: relative;
+ top: 20%;
+ 
+}
+
+
+
+
+

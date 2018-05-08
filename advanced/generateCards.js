@@ -41,5 +41,33 @@ function generateCards(){
 } 
 
 $(document).ready(
- function(){generateCards();}
-);
+ function(){generateCards();
+  generateDroppables();
+ });
+  
+function generateDroppables(){
+ var names=['one','two','three','four','five','six','seven','eight','nine','ten'];
+ 
+ var i=1;
+ names.map(function(x){
+  var newItem=$("<div class='todrop' id='drop-"+x+"' prop='"+i+"'><div>"+x+"</div></div>");
+  console.log(x);
+  $("#toplace").append(newItem);
+  $("#drop-"+x).droppable({accept: "#card"+i,hoverClass: "onRightPlace", drop: function(event,ui){
+                                                                                 
+                                                                                 var index=$(this).attr("prop");
+                                                                                 var newCard=$("<p class='copied' id='copy"+index+"'><span>"+index+"</span></p>");
+                                                                                 $("#drop-"+x).removeClass("todrop");
+                                                                                 $("#drop-"+x).addClass("droppingDone");     
+                                                                                 $("#drop-"+x).html(newCard);
+                                                                                 $("#card"+index).remove();
+                                                                                 //console.log(newCard);
+                                                                                }
+                          });
+  ++i;
+ });
+
+}
+
+
+
