@@ -6,13 +6,16 @@ function alreadyPicked(array,n){
 
 function cardSelected(n){
  //alert("card "+n+" selected");
- $("#card"+n).removeClass("card");
- $("#card"+n).addClass("selected");
+ //$("#card"+n).removeClass("card");
+ //$("#card"+n).addClass("selected");
+ //$("#card"+n).draggable();
 }
 
 function placeCard(id){
  var newCard=$("<div id='card"+id+"' class='card' onclick='cardSelected("+id+")'><div>"+id+"</div></div>");
  $("#cardpile").append(newCard);
+ $("#card"+id).addClass("ui-widget-content");
+ $("#card"+id).draggable();
 }
 
 function generateCards(){
