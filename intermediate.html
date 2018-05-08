@@ -9,31 +9,110 @@
 </head>
 <body>
 
-<div class="grid-container">
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div>
-	<div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div>
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div>
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div>
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div> 
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div> 
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div> 
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div> 
-    <div class="grid-item"><img class="item" src="img/santa.png" alt="santa"></div> 
+<header>
+<h1>Gin for Days!!</h1>
+</header>
+
+<main>
+	<div class="grid-container">
+    <div class="grid-item"><img id="item1" src="img/beefeater.png" alt="santa"></div>
+	<div class="grid-item"><img id="item2" src="img/bombay.png" alt="santa"></div>
+    <div class="grid-item"><img id="item3" src="img/bulldog.png" alt="santa"></div>
+    <div class="grid-item"><img id="item4" src="img/edinburgh.png" alt="santa"></div>
+    <div class="grid-item"><img id="item5" src="img/mare.png" alt="santa"></div> 
+    <div class="grid-item"><img id="item6" src="img/monkey.png" alt="santa"></div> 
+    <div class="grid-item"><img id="item7" src="img/omg.png" alt="santa"></div> 
+    <div class="grid-item"><img id="item8" src="img/wien.png" alt="santa"></div> 
+    <div class="grid-item"><img id="item9" src="img/reisetbauer.png" alt="santa"></div> 
+</div>
+</main>
+
+<div id="shoppingCart">
+	<h3>Your Gin(s) of Choice</h3>
+	<ul class="sc">
+		<li id="sci1"></li>
+		<li id="sci2"></li>
+		<li id="sci3"></li>
+		<li id="sci4"></li>
+		<li id="sci5"></li>
+		<li id="sci6"></li>
+		<li id="sci7"></li>
+		<li id="sci8"></li>
+		<li id="sci9"></li>
+	</ul>
+	<h5>Total: </h5>
+	<p id ="totalPrint"></p>
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
 	<script>$(document).ready(function(){
+		var beef = {
+			name = "Beefeater"
+			value = 20
+			count = 1
+		}
+
+
+		var bombay = {
+			name = "Bombay Sapphire"
+			value = 25
+			count = 1
+		}
+
+
+		var bulldog = {
+			name = "Bulldog"
+			value = 30
+			count = 1
+		}
+
+
+		var Edinburgh = {
+			name = "Edinburgh"
+			value = 30
+			count = 1
+		}
+
+
+		var mare = {
+			name = "Gin Mare"
+			value = 35
+			count = 1
+		}
+
+
+		var monkey = {
+			name = "Monkey Gin"
+			value = 40
+			count = 1
+		}
+
+
+		var omg = {
+			name = "OMG"
+			value = 45
+			count = 1
+		}
+
+
+		var wien = {
+			name = "Wien Gin"
+			value = 50
+			count = 1
+		}
+
+
+		var reisetbauer = {
+			name = "Reisetbauer Gin"
+			value = 55
+			count = 1
+		}
+
+		$("item1").click(function(){
+			$(this).addToCart
+		}
+
+
+	});
 
 	</script>
 
