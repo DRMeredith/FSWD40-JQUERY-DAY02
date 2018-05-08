@@ -17,6 +17,11 @@
  margin: 4% auto;
  background-color: yellow;
  height: 40%;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-left: 3%;
+ padding-right: 3%;
 }
 
 #toplace{
@@ -32,4 +37,25 @@ h1{
  text-align: center;
  font-family: "sans-serif";
 
+}
+
+.card{
+ height: 70%;
+ width: 7%;
+ background-color: grey;
+ border-radius: 5%;
+ color: white;
+ margin-top: 3%;
+ 
+ font-size: 5vh;
+ text-align: center;
+}
+
+.card div{
+ margin: 40% auto;
+}
+
+.selected{
+ color: transparent;
+ background-color: transparent;
 }
